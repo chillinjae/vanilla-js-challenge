@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learning Vanilla JS</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="js-weather" class="weather"></div>
+        <div class="js-clock clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input
+                type="text"
+                class="form__field"
+                placeholder="What is your name?"
+                name="name"
+                id="name"
+            />
+        </form>
+        <h4 class="js-greetings greetings">Hello,</h4>
+        <form class="js-toDoForm" autocomplete="off">
+            <label for="todo">What are you going to do?</label><br />
+            <input
+                type="text"
+                id="todo"
+                name="todo"
+                placeholder="add task"
+            /><br />
+        </form>
+        <div class="js-toDoStatus toDoStatus">
+            <div class="status">
+                <h2 class="status-pending">Pending</h2>
+                <ul id="pending"></ul>
+            </div>
+            <div class="status">
+                <h2 class="status-finished">Finished</h2>
+                <ul id="finished"></ul>
+            </div>
+        </div>
+        <script src="js/clock.js"></script>
+        <script src="js/greeting.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/bg.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
