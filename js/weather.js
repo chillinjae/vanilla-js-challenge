@@ -12,7 +12,7 @@ function showPosition(position) {
     const lat = Math.ceil(position.coords.latitude);
     const lon = Math.ceil(position.coords.longitude);
     let url =
-        "http://api.openweathermap.org/data/2.5/weather?lat=" +
+        "https://api.openweathermap.org/data/2.5/weather?lat=" +
         lat.toString() +
         "&lon=" +
         lon.toString() +
@@ -34,7 +34,7 @@ function showPosition(position) {
                 JSON.parse(request.response)["main"]["temp"] - 273.15
             );
             x.innerHTML =
-                "<img class='weather-icon' src='http://openweathermap.org/img/wn/" +
+                "<img class='weather-icon' src='https://openweathermap.org/img/wn/" +
                 icon +
                 ".png' />" +
                 "<div class='temp'>" +
